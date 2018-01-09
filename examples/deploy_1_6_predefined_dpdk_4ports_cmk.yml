@@ -23,7 +23,7 @@ pod_network_type: flannel
 #  note: default is multus-dpdk
 #
 use_multus_predefined: true
-multus_predefined_map: multus-dpdk-4
+multus_map: multus-dpdk-4
 
 use_sriov: true
 num_virtual_functions: 7
