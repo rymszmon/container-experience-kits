@@ -38,6 +38,9 @@
     force: yes
   when: '"http_proxy" in proxy_env or "https_proxy" in proxy_env'
 
+- name: synchronize time
+  command: timedatectl set-ntp true
+
 - name: install epel-release
   yum:
     name: epel-release
